@@ -30,7 +30,7 @@ requirements:
     - argh >=0.26.2
     - jsonschema >=2.5.1
     - six >=1.9.0
-    - sqlalchemy >= 1.2
+    - sqlalchemy >=1.2
 
 test:
   imports:
