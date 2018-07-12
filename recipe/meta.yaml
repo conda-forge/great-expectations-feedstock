@@ -1,6 +1,6 @@
 {% set name = "great-expectations" %}
-{% set version = "0.4.2" %}
-{% set sha256 = "41fe76f96d82ad27587dad13b9064ac73c942e8f7355912d36d8167f3a2f039b" %}
+{% set version = "0.4.3" %}
+{% set sha256 = "c03528be91ca0aaede7ed744ed74c414a59b3949b51004e604221bc1e6a9211e" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   #noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - great_expectations = great_expectations.cli:main
