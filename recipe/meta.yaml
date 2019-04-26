@@ -1,6 +1,6 @@
 {% set name = "great-expectations" %}
-{% set version = "0.4.5" %}
-{% set sha256 = "695db0f923349489c97ccc81cd4ae0a1d8e7777cb2b774fc4bd709c28cfa8ca2" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "f085887226c878ad8d73a15d0ef5e63ae6043c676feb883560f402163d1f50d5" %}
 
 package:
   name: {{ name|lower }}
@@ -61,4 +61,4 @@ about:
 extra:
   recipe-maintainers:
     - sodre
-    - jpcampb2
+    - jcampbell
