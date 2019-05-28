@@ -1,6 +1,6 @@
 {% set name = "great-expectations" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "b5b776616bf01b420bfbe502b496bded0e6981b1e55cb642d29e953b57c36097" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "4b29273d761d29e3d46dc27ecace07c61ec7c878f2cda28b3064f4bd4ac44e16" %}
 
 package:
   name: {{ name|lower }}
@@ -25,14 +25,18 @@ requirements:
     - pip
   run:
     - python
-    - numpy >=1.9.2
+    - pandas >=0.22.0
+    - numpy >=1.14.1
     - scipy >=0.19.0
-    - pandas >=0.20.3
     - python-dateutil >=2.4.2
     - pytz >=2015.6
-    - jsonschema >=2.5.1
     - six >=1.9.0
+    - jsonschema >=2.5.1
+    - backports.functools_lru_cache >=1.5
+  run_constrained:
     - sqlalchemy >=1.2
+    - pyspark >=2.3.2
+
 
 test:
   imports:
@@ -46,10 +50,12 @@ about:
   summary: 'Always know what to expect from your data.'
 
   description: |
-    Great Expectations is a framework that helps teams save time and
-    promote analytic integrity with a new twist on automated "testing:"
-    pipeline tests. Pipeline tests are applied to data (instead of code)
-    and at batch time (instead of compile or deploy time).
+    Great Expectations helps teams save time and promote analytic integrity 
+    by offering a unique approach to automated testing: pipeline tests. 
+    Pipeline tests are applied to data (instead of code) and at batch time 
+    (instead of compile or deploy time). Pipeline tests are like unit tests 
+    for datasets: they help you guard against upstream data changes and monitor 
+    data quality.
 
     Software developers have long known that automated testing is
     essential for managing complex codebases. Great Expectations brings
