@@ -9,10 +9,12 @@ Feedstock license: BSD 3-Clause
 
 Summary: Always know what to expect from your data.
 
-Great Expectations is a framework that helps teams save time and
-promote analytic integrity with a new twist on automated "testing:"
-pipeline tests. Pipeline tests are applied to data (instead of code)
-and at batch time (instead of compile or deploy time).
+Great Expectations helps teams save time and promote analytic integrity
+by offering a unique approach to automated testing: pipeline tests.
+Pipeline tests are applied to data (instead of code) and at batch time
+(instead of compile or deploy time). Pipeline tests are like unit tests
+for datasets: they help you guard against upstream data changes and monitor
+data quality.
 
 Software developers have long known that automated testing is
 essential for managing complex codebases. Great Expectations brings
