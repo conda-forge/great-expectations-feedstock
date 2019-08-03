@@ -41,6 +41,7 @@ requirements:
     - pyfiglet >=0.8
     - termcolor >=1.1.0
     - tzlocal >=1.2
+    - pypandoc >=1.4
   run_constrained:
     - sqlalchemy >=1.2
     - pyspark >=2.3.2
