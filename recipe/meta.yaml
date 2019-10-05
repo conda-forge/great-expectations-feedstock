@@ -43,6 +43,7 @@ requirements:
     - tzlocal >=1.2
     - pypandoc >=1.4
     - future >=0.16
+    - jinja2 >=2.10
   run_constrained:
     - sqlalchemy >=1.2
     - pyspark >=2.3.2
