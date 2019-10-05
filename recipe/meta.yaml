@@ -1,6 +1,6 @@
 {% set name = "great-expectations" %}
-{% set version = "0.7.10" %}
-{% set sha256 = "9fef858bf25083c53903717c62d69514a220bc84bdb9c4415bdbe20149c80b3f" %}
+{% set version = "0.7.11" %}
+{% set sha256 = "4d273a76cad528e0bb28244398f338edb3a0e94bc05f2c8cee9461f3f327e797" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ build:
   noarch: python
   #noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - great_expectations = great_expectations.cli:main
 
@@ -43,6 +43,7 @@ requirements:
     - tzlocal >=1.2
     - pypandoc >=1.4
     - future >=0.16
+    - jinja2 >=2.10
   run_constrained:
     - sqlalchemy >=1.2
     - pyspark >=2.3.2
