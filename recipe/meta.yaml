@@ -1,6 +1,6 @@
 {% set name = "great-expectations" %}
-{% set version = "0.7.11" %}
-{% set sha256 = "4d273a76cad528e0bb28244398f338edb3a0e94bc05f2c8cee9461f3f327e797" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "f5b6214bfbaf2a2ac9a0ba5873a59da0d7437922647406a2ba58e116f656d097" %}
 
 package:
   name: {{ name|lower }}
