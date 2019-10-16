@@ -1,6 +1,6 @@
 {% set name = "great-expectations" %}
-{% set version = "0.7.11" %}
-{% set sha256 = "4d273a76cad528e0bb28244398f338edb3a0e94bc05f2c8cee9461f3f327e797" %}
+{% set version = "0.8.1" %}
+{% set sha256 = "52f69f7465f0a4677ddc17715223b11ba33756851b855cdd6f11fc0eb9ea9a92" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,6 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
   #noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -38,16 +37,19 @@ requirements:
     - ipywidgets >=7.4.2
     - requests >=2.20
     - click >=7.0
-    - pyfiglet >=0.8
     - termcolor >=1.1.0
     - tzlocal >=1.2
     - pypandoc >=1.4
     - future >=0.16
     - jinja2 >=2.10
+    - marshmallow >=2.0,<3.0
+    # TEMPORARY FOR BROKEN PROMPT-TOOLKIT BUILDS
+    # downstream dependency of ipykernel -> ipython -> prompt-toolkit
+    - prompt_toolkit <2.0.10  # [py3k]  
+    - prompt_toolkit <1.0.17  # [py2k]
   run_constrained:
     - sqlalchemy >=1.2
     - pyspark >=2.3.2
-
 
 test:
   imports:
