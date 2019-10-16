@@ -12,7 +12,6 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
   #noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -28,7 +27,7 @@ requirements:
     - numpy >=1.14.1
     - scipy >=0.19.0
     - pandas >=0.22.0
-    - python-dateutil >=2.4.2
+    - python-dateutil>=2.4.2
     - pytz >=2015.6
     - six >=1.12.0
     - jsonschema >=2.5.1
@@ -38,16 +37,19 @@ requirements:
     - ipywidgets >=7.4.2
     - requests >=2.20
     - click >=7.0
-    - pyfiglet >=0.8
     - termcolor >=1.1.0
     - tzlocal >=1.2
     - pypandoc >=1.4
     - future >=0.16
     - jinja2 >=2.10
+    - marshmallow >=2.0,<3.0
+    # TEMPORARY FOR BROKEN PROMPT-TOOLKIT BUILDS
+    # downstream dependency of ipykernel -> ipython -> prompt-toolkit
+    - prompt-toolkit <2.0.10  # [py3k]  
+    - prompt-toolkit <1.0.17  # [py2k]
   run_constrained:
     - sqlalchemy >=1.2
     - pyspark >=2.3.2
-
 
 test:
   imports:
