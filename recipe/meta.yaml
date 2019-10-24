@@ -43,10 +43,6 @@ requirements:
     - future >=0.16
     - jinja2 >=2.10
     - marshmallow >=2.0,<3.0
-    # TEMPORARY FOR BROKEN PROMPT-TOOLKIT BUILDS
-    # downstream dependency of ipykernel -> ipython -> prompt-toolkit
-    - prompt_toolkit <2.0.10  # [py3k]  
-    - prompt_toolkit <1.0.17  # [py2k]
   run_constrained:
     - sqlalchemy >=1.2
     - pyspark >=2.3.2
