@@ -1,6 +1,6 @@
 {% set name = "great-expectations" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "52f69f7465f0a4677ddc17715223b11ba33756851b855cdd6f11fc0eb9ea9a92" %}
+{% set version = "0.8.2" %}
+{% set sha256 = "ac28c43976956178a9968f9eb599cba14ffa13bc0c723e8ba915af26711e459e" %}
 
 package:
   name: {{ name|lower }}
@@ -43,10 +43,6 @@ requirements:
     - future >=0.16
     - jinja2 >=2.10
     - marshmallow >=2.0,<3.0
-    # TEMPORARY FOR BROKEN PROMPT-TOOLKIT BUILDS
-    # downstream dependency of ipykernel -> ipython -> prompt-toolkit
-    - prompt_toolkit <2.0.10  # [py3k]  
-    - prompt_toolkit <1.0.17  # [py2k]
   run_constrained:
     - sqlalchemy >=1.2
     - pyspark >=2.3.2
