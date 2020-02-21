@@ -75,7 +75,7 @@ about:
     essential for managing complex codebases. Great Expectations brings
     the same discipline, confidence, and acceleration to data science
     and engineering teams.
-  doc_url: http://readthedocs.org/projects/great-expectations/
+  doc_url: https://docs.greatexpectations.io/
   dev_url: https://github.com/great-expectations/great_expectations
 
 extra:
