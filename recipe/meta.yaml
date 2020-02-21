@@ -43,6 +43,8 @@ requirements:
     - future >=0.16
     - jinja2 >=2.10
     - marshmallow >=2.0,<3.0
+    - mistune >=0.8.4
+    - autopep8 >=1.4.4
   run_constrained:
     - sqlalchemy >=1.2
     - pyspark >=2.3.2
@@ -50,6 +52,10 @@ requirements:
 test:
   imports:
     - great_expectations
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/great-expectations/great_expectations
