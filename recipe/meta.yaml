@@ -1,6 +1,6 @@
 {% set name = "great-expectations" %}
-{% set version = "0.8.8" %}
-{% set sha256 = "de620b511fd49d104eeb2b6e0d022f383a946db652109ca8e91a73c37d39bfd6" %}
+{% set version = "0.9.7" %}
+{% set sha256 = "48ebae13e48f5848a07ed67c5053895c42212e3b3467dca0f9817dbb153a7e52" %}
 
 package:
   name: {{ name|lower }}
@@ -39,10 +39,12 @@ requirements:
     - click >=7.0
     - termcolor >=1.1.0
     - tzlocal >=1.2
-    - pypandoc >=1.4
+    - mistune >=0.8.4
     - future >=0.16
     - jinja2 >=2.10
-    - marshmallow >=2.0,<3.0
+    - marshmallow >3.0
+    - autopep8 >=1.4.4
+    - black ==19.10b0
   run_constrained:
     - sqlalchemy >=1.2
     - pyspark >=2.3.2
@@ -56,7 +58,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Always know what to expect from your data.'
+  summary: Always know what to expect from your data.
 
   description: |
     Great Expectations helps teams save time and promote analytic integrity 
