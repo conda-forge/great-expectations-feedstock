@@ -44,6 +44,7 @@ requirements:
     - jinja2 >=2.10
     - marshmallow >=2.0,<3.0
     - autopep8 >=1.4.4
+    - black ==19.10b0
   run_constrained:
     - sqlalchemy >=1.2
     - pyspark >=2.3.2
