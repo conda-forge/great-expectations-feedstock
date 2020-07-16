@@ -5,7 +5,7 @@ Home: https://github.com/great-expectations/great_expectations
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Always know what to expect from your data.
 
