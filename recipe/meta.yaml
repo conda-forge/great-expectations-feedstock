@@ -32,7 +32,6 @@ requirements:
     - jinja2 >=2.10
     - jsonpatch >=1.22
     - jsonschema >=2.5.1
-    - marshmallow >3.0
     - mistune >=0.8.4
     - numpy >=1.14.1
     - pandas >=0.23.0
