@@ -5,9 +5,13 @@ Home: https://github.com/great-expectations/great_expectations
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/great-expectations-feedstock/blob/master/LICENSE.txt)
 
 Summary: Always know what to expect from your data.
+
+Development: https://github.com/great-expectations/great_expectations
+
+Documentation: http://readthedocs.org/projects/great-expectations/
 
 Great Expectations helps teams save time and promote analytic integrity
 by offering a unique approach to automated testing: pipeline tests.
