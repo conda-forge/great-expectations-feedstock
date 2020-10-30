@@ -11,19 +11,14 @@ Summary: Always know what to expect from your data.
 
 Development: https://github.com/great-expectations/great_expectations
 
-Documentation: http://readthedocs.org/projects/great-expectations/
+Documentation: https://docs.greatexpectations.io/
 
-Great Expectations helps teams save time and promote analytic integrity
-by offering a unique approach to automated testing: pipeline tests.
-Pipeline tests are applied to data (instead of code) and at batch time
-(instead of compile or deploy time). Pipeline tests are like unit tests
-for datasets: they help you guard against upstream data changes and monitor
-data quality.
 
-Software developers have long known that automated testing is
-essential for managing complex codebases. Great Expectations brings
-the same discipline, confidence, and acceleration to data science
-and engineering teams.
+Great Expectations helps data teams eliminate pipeline debt, through data testing, documentation, and profiling.
+
+Software developers have long known that testing and documentation are essential for managing complex codebases. Great Expectations brings the same confidence, integrity, and acceleration to data science and data engineering teams.
+
+See [Down with Pipeline Debt!](https://medium.com/@expectgreatdata/down-with-pipeline-debt-introducing-great-expectations-862ddc46782a) for an introduction to the philosophy of pipeline testing.
 
 
 Current build status
@@ -209,4 +204,5 @@ Feedstock Maintainers
 * [@jcampbell](https://github.com/jcampbell/)
 * [@sodre](https://github.com/sodre/)
 * [@xhochy](https://github.com/xhochy/)
+* [@anthonyburdi](https://github.com/anthonyburdi/)
 
