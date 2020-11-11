@@ -11,14 +11,19 @@ Summary: Always know what to expect from your data.
 
 Development: https://github.com/great-expectations/great_expectations
 
-Documentation: https://docs.greatexpectations.io/
+Documentation: http://readthedocs.org/projects/great-expectations/
 
+Great Expectations helps teams save time and promote analytic integrity
+by offering a unique approach to automated testing: pipeline tests.
+Pipeline tests are applied to data (instead of code) and at batch time
+(instead of compile or deploy time). Pipeline tests are like unit tests
+for datasets: they help you guard against upstream data changes and monitor
+data quality.
 
-Great Expectations helps data teams eliminate pipeline debt, through data testing, documentation, and profiling.
-
-Software developers have long known that testing and documentation are essential for managing complex codebases. Great Expectations brings the same confidence, integrity, and acceleration to data science and data engineering teams.
-
-See [Down with Pipeline Debt!](https://medium.com/@expectgreatdata/down-with-pipeline-debt-introducing-great-expectations-862ddc46782a) for an introduction to the philosophy of pipeline testing.
+Software developers have long known that automated testing is
+essential for managing complex codebases. Great Expectations brings
+the same discipline, confidence, and acceleration to data science
+and engineering teams.
 
 
 Current build status
@@ -60,6 +65,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2966&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/great-expectations-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2966&branchName=master">
@@ -81,6 +93,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2966&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/great-expectations-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>win_64_python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2966&branchName=master">
@@ -99,6 +118,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2966&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/great-expectations-feedstock?branchName=master&jobName=win&configuration=win_64_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2966&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/great-expectations-feedstock?branchName=master&jobName=win&configuration=win_64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
@@ -201,8 +227,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@anthonyburdi](https://github.com/anthonyburdi/)
 * [@jcampbell](https://github.com/jcampbell/)
 * [@sodre](https://github.com/sodre/)
 * [@xhochy](https://github.com/xhochy/)
-* [@anthonyburdi](https://github.com/anthonyburdi/)
 
