@@ -230,6 +230,6 @@ Feedstock Maintainers
 * [@anthonyburdi](https://github.com/anthonyburdi/)
 * [@jcampbell](https://github.com/jcampbell/)
 * [@sodre](https://github.com/sodre/)
-* [@talagluck](https://github.com/talagluck)
+* [@talagluck](https://github.com/talagluck/)
 * [@xhochy](https://github.com/xhochy/)
 
