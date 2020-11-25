@@ -1,6 +1,6 @@
 {% set name = "great-expectations" %}
-{% set version = "0.12.9" %}
-{% set sha256 = "9e162d95b944f24cb33678b35b893ab3e08a0f9f7ba2ad9f75f67cb9487036d6" %}
+{% set version = "0.12.10" %}
+{% set sha256 = "6f5b24f8a559ede56823387fbb26d2c466b5268c691597e3b9cdbd66fd1e7726" %}
 
 package:
   name: {{ name|lower }}
@@ -39,7 +39,7 @@ requirements:
     - python-dateutil >=2.8.1
     - pytz >=2015.6
     - requests >=2.20,<2.24
-    - ruamel.yaml >=0.15.24
+    - ruamel.yaml >=0.16
     - scipy >=0.19.0
     - termcolor >=1.1.0
     - tzlocal >=1.2
