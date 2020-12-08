@@ -227,10 +227,10 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Shinnnyshinshin](https://github.com/Shinnnyshinshin/)
 * [@anthonyburdi](https://github.com/anthonyburdi/)
 * [@jcampbell](https://github.com/jcampbell/)
 * [@sodre](https://github.com/sodre/)
 * [@talagluck](https://github.com/talagluck/)
 * [@xhochy](https://github.com/xhochy/)
-* [@Shinnnyshinshin](https://github.com/Shinnnyshinshin/)
 
