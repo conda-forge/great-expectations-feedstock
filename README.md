@@ -232,4 +232,5 @@ Feedstock Maintainers
 * [@sodre](https://github.com/sodre/)
 * [@talagluck](https://github.com/talagluck/)
 * [@xhochy](https://github.com/xhochy/)
+* [@Shinnnyshinshin](https://github.com/Shinnnyshinshin/)
 
