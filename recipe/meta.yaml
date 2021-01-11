@@ -19,6 +19,9 @@ build:
     - great_expectations = great_expectations.cli:main
 
 requirements:
+  build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python
     - pip
