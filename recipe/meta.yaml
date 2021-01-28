@@ -1,18 +1,16 @@
 {% set name = "great-expectations" %}
-{% set version = "0.13.6" %}
-{% set sha256 = "5d3c1eec8de7ad789e2b1515117fb98380cb3186932840d6ade9734dab3cdbb9" %}
+{% set version = "0.13.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-","_") }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 2f8973e9a4b78fb276a540380243921ef69155077a212738fbad344a52cf6e1b
 
 build:
-  #noarch: python
+  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -20,15 +18,14 @@ build:
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
+    - python >=3.6                           # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
-    - altair >=4,<5
-    - black >=19.10b0
+    - python >=3.6
+    - altair >=4.0.0,<5
     - click >=7.1.2
     - importlib-metadata >=1.7.0
     - ipywidgets >=7.5.1
