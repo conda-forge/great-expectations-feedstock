@@ -33,12 +33,12 @@ requirements:
     - jsonpatch >=1.22
     - jsonschema >=2.5.1
     - mistune >=0.8.4
-    - numpy >=1.14.1
+    - numpy >=1.14.1,<1.20.0
     - pandas >=0.23.0
     - pyparsing >=2.4,<3
     - python-dateutil >=2.8.1
     - pytz >=2015.6
-    - requests >=2.20,<2.24
+    - requests >=2.20
     - ruamel.yaml >=0.16
     - scipy >=0.19.0
     - termcolor >=1.1.0
