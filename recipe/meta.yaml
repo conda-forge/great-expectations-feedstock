@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - great_expectations = great_expectations.cli:main
@@ -78,6 +78,8 @@ extra:
     - sodre
     - jcampbell
     - xhochy
+    - alexsherstinsky
     - anthonyburdi
+    - Aylr
     - talagluck
     - Shinnnyshinshin
