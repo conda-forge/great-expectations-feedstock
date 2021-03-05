@@ -131,10 +131,10 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Aylr](https://github.com/Aylr/)
 * [@Shinnnyshinshin](https://github.com/Shinnnyshinshin/)
 * [@alexsherstinsky](https://github.com/alexsherstinsky/)
 * [@anthonyburdi](https://github.com/anthonyburdi/)
-* [@Aylr](https://github.com/Aylr/)
 * [@jcampbell](https://github.com/jcampbell/)
 * [@sodre](https://github.com/sodre/)
 * [@talagluck](https://github.com/talagluck/)
