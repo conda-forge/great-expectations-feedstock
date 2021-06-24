@@ -1,5 +1,5 @@
 {% set name = "great-expectations" %}
-{% set version = "0.13.19" %}
+{% set version = "0.13.20" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-","_") }}-{{ version }}.tar.gz
-  sha256: 1dcd83d2355c9a7930c7f547e84c8882ef2c4e32f3d618e93614676dc69a7d5e
+  sha256: 15e59575376121a867aaeae9c579651885d662aaf29feeebdd28893031d58532
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ requirements:
     - jsonpatch >=1.22
     - jsonschema >=2.5.1
     - mistune >=0.8.4
-    - numpy >=1.14.1,<1.20.0
+    - numpy >=1.14.1
     - pandas >=0.23.0
     - pyparsing >=2.4,<3
     - python-dateutil >=2.8.1
