@@ -1,5 +1,5 @@
 {% set name = "great-expectations" %}
-{% set version = "0.13.21" %}
+{% set version = "0.13.22" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-","_") }}-{{ version }}.tar.gz
-  sha256: 493261ceaa47e463d88b93836a35c5b3618b7266fc8092841abd72b6abd4b8e1
+  sha256: 8fbf11090f193891c238b7442b56922155903968496599218fdd106ed66dd7de
 
 build:
   noarch: python
