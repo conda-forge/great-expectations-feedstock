@@ -1,5 +1,5 @@
 {% set name = "great-expectations" %}
-{% set version = "0.13.25" %}
+{% set version = "0.13.29" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-","_") }}-{{ version }}.tar.gz
-  sha256: c797d25b6ea2c3a2c3dcd11e56ef2c2c49e4c2dee697b6ea7727cf71bc73eba4
+  sha256: 731e67b824f200d9af19d3d0157bb92482cff5ce10a6f52706b6f79d58095d92
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - altair >=4.0.0,<5
+    - altair <5,>=4.0.0
     - click >=7.1.2
     - importlib-metadata >=1.7.0
     - ipywidgets >=7.5.1
@@ -35,7 +35,7 @@ requirements:
     - mistune >=0.8.4
     - numpy >=1.14.1
     - pandas >=0.23.0
-    - pyparsing >=2.4,<3
+    - pyparsing <3,>=2.4
     - python-dateutil >=2.8.1
     - pytz >=2015.6
     - requests >=2.20
@@ -44,6 +44,20 @@ requirements:
     - termcolor >=1.1.0
     - tqdm >=4.59.0
     - tzlocal >=1.2
+    # - sqlalchemy >=1.3.16
+    # - snowflake-sqlalchemy >=1.2
+    # - ruamel_yaml >=0.16
+    # - pyspark >=2.3.2
+    # - pybigquery ==0.4.15
+    # - psycopg2 >=2.8
+    # - google-cloud-storage >=1.28.0
+    # - google-cloud-secret-manager >=1.0.0
+    # - google-cloud >=0.34.0
+    # - boto3 >=1.14
+    # - azure-keyvault-secrets >=4.0.0
+    # - azure-identity >=1.0.0
+    # - airflow >=1.9.0
+    # - Click >=7.1.2
   run_constrained:
     - sqlalchemy >=1.2,<1.4
     - pyspark >=2.3.2
