@@ -1,5 +1,5 @@
 {% set name = "great-expectations" %}
-{% set version = "0.13.37" %}
+{% set version = "0.13.38" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-","_") }}-{{ version }}.tar.gz
-  sha256: d34f3e4a2cee7fc51510dceb92eefe3a98d35263083258f3d89f67730441f053
+  sha256: 62a9b90617bec68f9815875d5dd4793a8bbe9c39c7c6fd246b7eaf6b7343c5dd
 
 build:
   noarch: python
@@ -44,6 +44,20 @@ requirements:
     - termcolor >=1.1.0
     - tqdm >=4.59.0
     - tzlocal >=1.2
+    # - sqlalchemy >=1.3.16
+    # - snowflake-sqlalchemy >=1.2
+    # - ruamel_yaml >=0.16
+    # - pyspark >=2.3.2
+    # - pybigquery ==0.4.15
+    # - psycopg2 >=2.8
+    # - google-cloud-storage >=1.28.0
+    # - google-cloud-secret-manager >=1.0.0
+    # - google-cloud >=0.34.0
+    # - boto3 >=1.14
+    # - azure-keyvault-secrets >=4.0.0
+    # - azure-identity >=1.0.0
+    # - airflow >=1.9.0
+    # - Click >=7.1.2
     # - sqlalchemy >=1.3.16
     # - snowflake-sqlalchemy >=1.2
     # - ruamel_yaml >=0.16
