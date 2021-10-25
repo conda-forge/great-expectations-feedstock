@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - great_expectations = great_expectations.cli:main
@@ -143,7 +143,7 @@ requirements:
     # - airflow >=1.9.0
     # - Click >=7.1.2
   run_constrained:
-    - sqlalchemy >=1.2,<1.4
+    - sqlalchemy >=1.2,<2
     - pyspark >=2.3.2
 
 test:
