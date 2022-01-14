@@ -11,7 +11,7 @@ Summary: Always know what to expect from your data.
 
 Development: https://github.com/great-expectations/great_expectations
 
-Documentation: http://readthedocs.org/projects/great-expectations/
+Documentation: https://docs.greatexpectations.io
 
 Great Expectations helps teams save time and promote analytic integrity
 by offering a unique approach to automated testing: pipeline tests.
