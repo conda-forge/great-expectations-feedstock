@@ -1,12 +1,11 @@
-{% set name = "great-expectations" %}
 {% set version = "0.14.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: great-expectations
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-","_") }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
   sha256: e5c361f9033e87cd0c5f3b7c9635ef15bb44b922b56f6b7d616616c18c1a092a
 
 build:
@@ -17,9 +16,6 @@ build:
     - great_expectations = great_expectations.cli:main
 
 requirements:
-  build:
-    - python >=3.6                           # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python >=3.6
     - pip
@@ -39,7 +35,7 @@ requirements:
     - python-dateutil >=2.8.1
     - pytz >=2015.6
     - requests >=2.20
-    - ruamel.yaml >=0.16
+    - ruamel.yaml >=0.16,<0.17.18
     - scipy >=0.19.0
     - termcolor >=1.1.0
     - tqdm >=4.59.0
@@ -163,6 +159,10 @@ requirements:
 test:
   imports:
     - great_expectations
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/great-expectations/great_expectations
@@ -172,18 +172,18 @@ about:
   summary: Always know what to expect from your data.
 
   description: |
-    Great Expectations helps teams save time and promote analytic integrity 
-    by offering a unique approach to automated testing: pipeline tests. 
-    Pipeline tests are applied to data (instead of code) and at batch time 
-    (instead of compile or deploy time). Pipeline tests are like unit tests 
-    for datasets: they help you guard against upstream data changes and monitor 
+    Great Expectations helps teams save time and promote analytic integrity
+    by offering a unique approach to automated testing: pipeline tests.
+    Pipeline tests are applied to data (instead of code) and at batch time
+    (instead of compile or deploy time). Pipeline tests are like unit tests
+    for datasets: they help you guard against upstream data changes and monitor
     data quality.
 
     Software developers have long known that automated testing is
     essential for managing complex codebases. Great Expectations brings
     the same discipline, confidence, and acceleration to data science
     and engineering teams.
-  doc_url: http://readthedocs.org/projects/great-expectations/
+  doc_url: https://docs.greatexpectations.io
   dev_url: https://github.com/great-expectations/great_expectations
 
 extra:
