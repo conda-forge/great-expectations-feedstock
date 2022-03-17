@@ -1,4 +1,4 @@
-{% set version = "0.14.10" %}
+{% set version = "0.14.11" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: e92a00b04abf58e93efba518a3099a57f3c130bca62865cffb48026ac2b9e58e
+  sha256: 084cf4c68f5ded9a6f6dd9611bee0424e92bae5c948d401d9a21272fa10a3cf1
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ requirements:
     - pandas >=0.23.0
     - pyparsing <3,>=2.4
     - python-dateutil >=2.8.1
-    - pytz >=2015.6
+    - pytz >=2021.3
     - requests >=2.20
     - ruamel.yaml >=0.16,<0.17.18
     - scipy >=0.19.0
@@ -53,6 +53,37 @@ requirements:
     # - azure-keyvault-secrets >=4.0.0
     # - azure-identity >=1.0.0
     # - airflow >=1.9.0
+    # - Click >=7.1.2
+    # - xlrd <2.0.0,>=1.1.0
+    # - urllib3 <1.27,>=1.25.4
+    # - teradatasqlalchemy ==17.0.0.1
+    # - sqlalchemy-redshift >=0.7.7
+    # - sqlalchemy-dremio >=1.2.1
+    # - sqlalchemy-bigquery >=1.3.0
+    # - sqlalchemy <1.4.10,>=1.3.18
+    # - snowflake-sqlalchemy >=1.2.3
+    # - snowflake-connector-python ==2.5.0
+    # - ruamel_yaml <0.17.18,>=0.16
+    # - pyspark >=2.3.2
+    # - pypd ==1.1.0
+    # - pyodbc >=4.0.30
+    # - pymysql <0.10,>=0.9.3
+    # - pyathena >=1.11
+    # - pyarrow >=0.12.0
+    # - psycopg2 >=2.7.6
+    # - packaging 
+    # - openpyxl >=3.0.7
+    # - nbformat >=5.0
+    # - google-cloud-storage >=1.28.0
+    # - google-cloud-secret-manager >=1.0.0
+    # - gcsfs >=0.5.1
+    # - feather-format >=0.4.1
+    # - cryptography <4.0.0,>=3.2
+    # - colorama >=0.4.3
+    # - boto3 ==1.17.106
+    # - azure-storage-blob >=12.5.0
+    # - azure-keyvault-secrets >=4.0.0
+    # - azure-identity >=1.0.0
     # - Click >=7.1.2
   run_constrained:
     - sqlalchemy >=1.3.16
