@@ -163,6 +163,7 @@ Feedstock Maintainers
 * [@Shinnnyshinshin](https://github.com/Shinnnyshinshin/)
 * [@alexsherstinsky](https://github.com/alexsherstinsky/)
 * [@anthonyburdi](https://github.com/anthonyburdi/)
+* [@cdkini](https://github.com/cdkini/)
 * [@janjagusch](https://github.com/janjagusch/)
 * [@jcampbell](https://github.com/jcampbell/)
 * [@sodre](https://github.com/sodre/)
