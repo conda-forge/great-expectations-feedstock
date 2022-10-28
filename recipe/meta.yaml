@@ -1,4 +1,4 @@
-{% set version = "0.15.28" %}
+{% set version = "0.15.29" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: c379119513b5db4118f415479fa6c53c5d90f71b1e2140f00f69018d3dff38a5
+  sha256: eb2420ec2e4ac84d46b46aa7fc04110656a97d41ab5429b2d12ef52b7aee6c46
 
 build:
   noarch: python
@@ -20,8 +20,8 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - marshmallow >=3.7.1,<4.0.0
-    - makefun >=1.7.0,<2
+    - marshmallow <4.0.0,>=3.7.1
+    - makefun <2,>=1.7.0
     - notebook >=6.4.10
     - dataclasses
     - ipython >=7.16.3
@@ -30,15 +30,15 @@ requirements:
     - nbformat >=5.0
     - packaging
     - typing-extensions >=3.10.0.0
-    - urllib3 >=1.25.4,<1.27
+    - urllib3 <1.27,>=1.25.4
     - python >=3.6
-    - altair >=4.0.0,<5
+    - altair <5,>=4.0.0
     - click >=7.1.2
     - importlib-metadata >=1.7.0
     - ipywidgets >=7.5.1
     - jinja2 >=2.10
     - jsonpatch >=1.22
-    - jsonschema >=2.5.1
+    - jsonschema <=4.7.2,>=2.5.1
     - mistune >=0.8.4
     - numpy >=1.18.5
     - pandas >=1.1.0
@@ -46,7 +46,7 @@ requirements:
     - python-dateutil >=2.8.1
     - pytz >=2021.3
     - requests >=2.20
-    - ruamel.yaml >=0.16,<0.17.18
+    - ruamel.yaml <0.17.18,>=0.16
     - scipy >=0.19.0
     - termcolor >=1.1.0
     - tqdm >=4.59.0
