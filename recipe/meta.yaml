@@ -1,4 +1,4 @@
-{% set version = "0.16.3" %}
+{% set version = "0.16.4" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: ec20e70c5a1545a46b467dc233b95bece90c70f04477195e5bdbcb5f484d9978
+  sha256: d9838974f212e06dbe00230e2043d57832b7826ebd600e95862fdccd692583d7
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - pydantic >=1.10.4,<2.0
+    - pydantic >=1.9.2,<2.0
     - marshmallow >=3.7.1,<4.0.0
     - makefun >=1.7.0,<2
     - notebook >=6.4.10
