@@ -1,4 +1,4 @@
-{% set version = "0.16.5" %}
+{% set version = "0.16.7" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: e0f063c706bb3aa4da88ecd5b1de49ebf9f01d7845c37a1a21ec5c34b3c13162
+  sha256: cca31ed865c17d8d0a3b72bf747b8138737605e0bf3025fa28da62a43def5292
 
 build:
   noarch: python
@@ -48,7 +48,7 @@ requirements:
     - pytz >=2021.3
     - requests >=2.20
     - ruamel.yaml >=0.16,<0.17.18
-    - scipy >=0.19.0
+    - scipy >=1.6.0
     - termcolor >=1.1.0,<2.1.0
     - tqdm >=4.59.0
     - tzlocal >=1.2
