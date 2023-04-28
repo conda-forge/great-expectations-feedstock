@@ -1,4 +1,4 @@
-{% set version = "0.16.5" %}
+{% set version = "0.16.9" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: e0f063c706bb3aa4da88ecd5b1de49ebf9f01d7845c37a1a21ec5c34b3c13162
+  sha256: e15c9e216a98e5b4155f7413abb62a514adf6b8266774ce0648bd61c15dbfb23
 
 build:
   noarch: python
@@ -31,9 +31,9 @@ requirements:
     - nbformat >=5.0
     - packaging
     - typing-extensions >=3.10.0.0
-    - urllib3 >=1.25.4,<1.27
+    - urllib3 >=1.26
     - python >=3.6
-    - altair >=4.0.0,<4.2.1
+    - altair >=4.2.1
     - click >=7.1.2
     - importlib-metadata >=1.7.0
     - ipywidgets >=7.5.1
@@ -42,30 +42,17 @@ requirements:
     - jsonschema >=2.5.1
     - mistune >=0.8.4
     - numpy >=1.18.5
-    - pandas >=1.1.0
+    - pandas >=1.1.0,<2
     - pyparsing >=2.4
     - python-dateutil >=2.8.1
     - pytz >=2021.3
     - requests >=2.20
     - ruamel.yaml >=0.16,<0.17.18
-    - scipy >=0.19.0
+    - scipy >=1.6.0
     - termcolor >=1.1.0,<2.1.0
     - tqdm >=4.59.0
     - tzlocal >=1.2
     - typing_extensions >=3.10.0.0
-    # - sqlalchemy-bigquery >=1.3.0
-    # - sqlalchemy >=1.3.18
-    # - snowflake-sqlalchemy >=1.2
-    # - ruamel_yaml <0.17.18,>=0.16
-    # - pyspark >=2.3.2
-    # - psycopg2 >=2.8
-    # - google-cloud-storage >=1.28.0
-    # - google-cloud-secret-manager >=1.0.0
-    # - boto3 >=1.14
-    # - azure-keyvault-secrets >=4.0.0
-    # - azure-identity >=1.0.0
-    # - airflow >=1.9.0
-    # - Click >=7.1.2
   run_constrained:
     - sqlalchemy >=1.3.16
     - pyspark >=2.3.2
