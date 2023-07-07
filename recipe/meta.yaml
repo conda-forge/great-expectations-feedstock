@@ -1,4 +1,4 @@
-{% set version = "0.17.2" %}
+{% set version = "0.17.3" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: 5949de080d8ed5e25c3aed7d900a7c991f4f8fdafd764c60823cc031c13388b6
+  sha256: bd8ee787b72c6988fd8b2bb8ecc4105379aa385bb1a1752598f6e8028ec85328
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ requirements:
     - urllib3 >=1.26
     - python >=3.6
     - altair >=4.2.1,<5.0.0
-    - click >=7.1.2
+    - click >=7.1.2,<=8.1.3
     - importlib-metadata >=1.7.0
     - ipywidgets >=7.5.1
     - jinja2 >=2.10
