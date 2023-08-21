@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - great_expectations = great_expectations.cli:main
@@ -20,39 +20,36 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - pydantic >=1.9.2,<2.0
-    - marshmallow >=3.7.1,<4.0.0
-    - makefun >=1.7.0,<2
-    - notebook >=6.4.10
-    - dataclasses
-    - ipython >=7.16.3
-    - colorama >=0.4.3
-    - cryptography >=3.2
-    - nbformat >=5.0
-    - packaging
-    - typing-extensions >=3.10.0.0
-    - urllib3 >=1.26
     - python >=3.6
     - altair >=4.2.1,<5.0.0
     - click >=7.1.2,!=8.1.4
+    - colorama >=0.4.3
+    - cryptography >=3.2
     - importlib-metadata >=1.7.0
+    - ipython >=7.16.3
     - ipywidgets >=7.5.1
     - jinja2 >=2.10
     - jsonpatch >=1.22
     - jsonschema >=2.5.1
+    - makefun >=1.7.0,<2
+    - marshmallow >=3.7.1,<4.0.0
     - mistune >=0.8.4
+    - nbformat >=5.0
+    - notebook >=6.4.10
     - numpy >=1.19.5
-    - pandas >=1.1.0,<2
+    - packaging
+    - pandas >=1.1.0
+    - pydantic >=1.9.2,<2.0
     - pyparsing >=2.4
     - python-dateutil >=2.8.1
     - pytz >=2021.3
     - requests >=2.20
     - ruamel.yaml >=0.16,<0.17.18
     - scipy >=1.6.0
-    - termcolor >=1.1.0,<2.1.0
     - tqdm >=4.59.0
+    - typing-extensions >=3.10.0.0
     - tzlocal >=1.2
-    - typing_extensions >=3.10.0.0
+    - urllib3 >=1.26
   run_constrained:
     - sqlalchemy >=1.3.16
     - pyspark >=2.3.2
