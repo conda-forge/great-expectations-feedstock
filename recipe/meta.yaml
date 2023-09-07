@@ -1,4 +1,4 @@
-{% set version = "0.17.14" %}
+{% set version = "0.17.15" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: 6f7294e49816171a8e4d76bca1ad9cf06f7f4b03a4e9225afb78035c3b036fdc
+  sha256: 12daafcddd8c5f8225010f23975a8da223bab671c4d1f34d651e53c3a7b44a9d
 
 build:
   noarch: python
@@ -39,7 +39,7 @@ requirements:
     - numpy >=1.19.5
     - packaging
     - pandas >=1.1.0
-    - pydantic >=1.9.2,<2.0
+    - pydantic >=1.9.2
     - pyparsing >=2.4
     - python-dateutil >=2.8.1
     - pytz >=2021.3
