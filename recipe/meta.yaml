@@ -1,4 +1,4 @@
-{% set version = "0.18.13" %}
+{% set version = "0.18.14" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: 0e70a4ebabaaf9b47ae4640e0068c90fa416929a1c862704cd1077d73020dcaa
+  sha256: d5595dd0943e076e45a44241fbbb0235f829bbcc9f4565d7cb4c6ce86666a9cb
 
 build:
   noarch: python
