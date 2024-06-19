@@ -36,7 +36,7 @@ requirements:
     - mistune >=0.8.4
     - nbformat >=5.0
     - notebook >=6.4.10
-    - numpy >=1.20.3
+    - numpy >=1.20.3,<2
     - packaging
     - pandas >=1.1.0
     - pydantic >=1.9.2
