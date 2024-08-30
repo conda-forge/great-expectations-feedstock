@@ -39,7 +39,7 @@ requirements:
     - notebook >=6.4.10
     - numpy >=1.20.3,<2
     - packaging
-    - pandas >=1.1.0
+    - pandas >=1.1.0,<2.2
     - pydantic >=1.10.7
     - pyparsing >=2.4
     - python-dateutil >=2.8.1
