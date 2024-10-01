@@ -1,4 +1,4 @@
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: 7da8b2eba53c8ae342862246f018b18bd3dc62a2c591af80052d7a2c88d1d270
+  sha256: b4f8f423361c2456cec98cc5d4defe80b85ba5dadfd03220e47585d0b2f85db2
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - python >=3.8,<3.12
     - pip
   run:
+    - typing_extensions >=4.1.0
     - posthog >=2.1.0,<3
     - python >=3.8
     - altair >=4.2.1,<5.0.0
