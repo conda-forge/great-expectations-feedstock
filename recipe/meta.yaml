@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - great_expectations = great_expectations.cli:main
@@ -18,12 +18,12 @@ build:
 requirements:
   host:
     # Needs a versioneer update, the code should run with 3.12 though
-    - python >=3.8,<3.12
+    - python {{ python_min }}
     - pip
   run:
     - typing_extensions >=4.1.0
     - posthog >=2.1.0,<3
-    - python >=3.8
+    - python >={{ python_min }}
     - altair >=4.2.1,<5.0.0
     - click >=7.1.2
     - colorama >=0.4.3
@@ -61,6 +61,7 @@ test:
     - great_expectations
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
