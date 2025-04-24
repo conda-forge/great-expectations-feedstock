@@ -20,6 +20,7 @@ requirements:
     # Needs a versioneer update, the code should run with 3.12 though
     - python {{ python_min }}
     - pip
+    - versioneer
   run:
     - typing_extensions >=4.1.0
     - posthog >3,<4
