@@ -1,4 +1,4 @@
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: 23dd225a9ac3a1aac4e234c29617f323c1ebbe3411b2cf65bb8c13d1faeef167
+  sha256: 2dd2a261bb202f0190ae9e328640378a1bc4399172e57c898b0591c2c524dd86
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     # Needs a versioneer update, the code should run with 3.12 though
     - python {{ python_min }}
     - pip
+    - versioneer
   run:
     - typing_extensions >=4.1.0
     - posthog >3,<4
