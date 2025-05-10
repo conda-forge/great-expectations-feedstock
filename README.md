@@ -11,7 +11,7 @@ Summary: Always know what to expect from your data.
 
 Development: https://github.com/great-expectations/great_expectations
 
-Documentation: https://docs.greatexpectations.io
+Documentation: https://docs.greatexpectations.io/
 
 Great Expectations helps teams save time and promote analytic integrity
 by offering a unique approach to automated testing: pipeline tests.
@@ -24,7 +24,6 @@ Software developers have long known that automated testing is
 essential for managing complex codebases. Great Expectations brings
 the same discipline, confidence, and acceleration to data science
 and engineering teams.
-
 
 Current build status
 ====================
