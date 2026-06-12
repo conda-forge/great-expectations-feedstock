@@ -19,6 +19,7 @@ requirements:
     - python {{ python_min }}
     - pip
     - versioneer
+    - setuptools
   run:
     - python >={{ python_min }}
     - altair >=5.0.0,<7.0.0
