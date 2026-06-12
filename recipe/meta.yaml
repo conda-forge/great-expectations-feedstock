@@ -46,6 +46,17 @@ requirements:
 test:
   imports:
     - great_expectations
+    - great_expectations.checkpoint
+    - great_expectations.core
+    - great_expectations.data_context
+    - great_expectations.datasource
+    - great_expectations.exceptions
+    - great_expectations.execution_engine
+    - great_expectations.expectations
+    - great_expectations.metrics
+    - great_expectations.render
+    - great_expectations.types
+    - great_expectations.validator
   requires:
     - pip
     - python {{ python_min }}
