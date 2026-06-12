@@ -10,10 +10,8 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  entry_points:
-    - great_expectations = great_expectations.cli:main
 
 requirements:
   host:
@@ -21,38 +19,27 @@ requirements:
     - python {{ python_min }}
     - pip
     - versioneer
+    - setuptools
   run:
-    - typing_extensions >=4.1.0
-    - posthog >3
     - python >={{ python_min }}
     - altair >=5.0.0,<7.0.0
-    - click >=7.1.2
-    - colorama >=0.4.3
     - cryptography >=3.2
-    - ipython >=7.16.3
-    - ipywidgets >=7.5.1
     - jinja2 >=3
-    - jsonpatch >=1.22
     - jsonschema >=2.5.1
-    - makefun >=1.7.0,<2
     - marshmallow >=3.7.1,<4.0.0
     - mistune >=0.8.4
-    - nbformat >=5.0
-    - notebook >=6.4.10
-    - numpy >=1.20.3,<2
+    - numpy >=1.22.4
     - packaging
-    - pandas >=1.1.0,<2.2
+    - pandas >=1.3.0
     - pydantic >=1.10.7
     - pyparsing >=2.4,!=3.2.4
     - python-dateutil >=2.8.1
-    - pytz >=2021.3
     - requests >=2.20
     - ruamel.yaml >=0.16
     - scipy >=1.6.0
     - tqdm >=4.59.0
     - typing-extensions >=4.1.0
     - tzlocal >=1.2
-    - urllib3 >=1.26
   run_constrained:
     - sqlalchemy >=1.3.16
     - pyspark >=2.3.2
@@ -60,6 +47,17 @@ requirements:
 test:
   imports:
     - great_expectations
+    - great_expectations.checkpoint
+    - great_expectations.core
+    - great_expectations.data_context
+    - great_expectations.datasource
+    - great_expectations.exceptions
+    - great_expectations.execution_engine
+    - great_expectations.expectations
+    - great_expectations.metrics
+    - great_expectations.render
+    - great_expectations.types
+    - great_expectations.validator
   requires:
     - pip
     - python {{ python_min }}
