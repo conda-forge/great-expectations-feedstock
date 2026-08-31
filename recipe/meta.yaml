@@ -1,4 +1,4 @@
-{% set version = "1.21.0" %}
+{% set version = "1.22.0" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: 0ab9683fea0884d383274aff6efc03f91faa8fdb944236bd7623b6adc82a7eef
+  sha256: d04ae01b1b0ad540a29c149d8ce50cddfd0bd1e07b8af8072ba86798c13930ba
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - cryptography >=3.2
     - jinja2 >=3
     - jsonschema >=2.5.1
-    - marshmallow >=3.7.1,<4.0.0
+    - marshmallow >=3.18.0
     - mistune >=0.8.4
     - numpy >=1.22.4
     - packaging
