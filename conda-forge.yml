@@ -1,4 +1,3 @@
-build_platform: {osx_arm64: osx_64}
 conda_forge_output_validation: true
 bot:
   inspection: update-grayskull
@@ -9,3 +8,5 @@ github:
 conda_build:
   pkg_format: '2'
 test: native_and_emulated
+provider:
+  osx_arm64: default
