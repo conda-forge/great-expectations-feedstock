@@ -1,4 +1,4 @@
-{% set version = "1.24.1" %}
+{% set version = "1.25.0" %}
 
 package:
   name: great-expectations
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/g/great-expectations/great_expectations-{{ version }}.tar.gz
-  sha256: d35f98a4a1ec27457b61a99ed194ad55eeabcd9c9677162dd2a5db853e9f2490
+  sha256: a85675107f2865537094a02ef0c62260bd33aea3fa1b71536fcb597438adb590
 
 build:
   noarch: python
